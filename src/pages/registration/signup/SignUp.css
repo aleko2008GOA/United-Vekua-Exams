@@ -1,0 +1,16 @@
+#sign-up-form{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid;
+    margin: 20px;
+}
+
+#sign-up-form section{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#sign-up-form h1 { margin: 2px; padding: 2px; }
