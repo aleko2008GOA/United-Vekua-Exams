@@ -23,7 +23,7 @@
     "rewrites": [
         {
             "source": "/:match*",
-            "destination": "/index.html"
+            "destination": "/dist/index.html"
         }
     ]
 }  
