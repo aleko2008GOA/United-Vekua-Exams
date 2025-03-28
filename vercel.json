@@ -16,7 +16,7 @@
             "destination": "server/app.js"
         },
         {
-            "source": "/(?!static/).*",
+            "source": "/((?!static/).*)",
             "destination": "/dist/index.html"
         }
     ]
