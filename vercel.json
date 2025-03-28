@@ -10,7 +10,7 @@
             "use": "@vercel/static-build"
         }
     ],
-    "rewrites": [
+    "routes": [
         {
             "src": "/api/(.*)",
             "dest": "server/app.js"
@@ -18,6 +18,12 @@
         {
             "src": "/(.*)",
             "dest": "/dist/index.html"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/:match*",
+            "destination": "/dist/index.html"
         }
     ]
 }  
