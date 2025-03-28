@@ -14,7 +14,7 @@ function SignUp(){
 
     async function fetchUsers(){
         try {
-            const res = await fetch(`${import.meta.env.VITE_API_URL}/api/users`);
+            const res = await fetch(`${import.meta.env.VITE_API_URL || ""}/api/users`);
             if (!res.ok) throw new Error('Can not get default users? Huh');
             const data = await res.json();
             setUsers(data);
@@ -72,7 +72,7 @@ function SignUp(){
 
     async function fetchFromBack(){
         try{
-            const res = await fetch('http://localhost:5000/api/users', {
+            const res = await fetch(`${import.meta.env.VITE_API_URL || ""}/api/users`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

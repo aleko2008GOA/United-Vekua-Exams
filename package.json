@@ -8,6 +8,7 @@
     "start-backend": "node server/app.js",
     "start-frontend": "vite",
     "build": "vite build",
+    "vercel-build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
